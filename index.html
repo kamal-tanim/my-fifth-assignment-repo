@@ -4,8 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fifth Assignment</title>
+
+    <!-- tailwindCSS and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+
+    <header>
+        <nav class="flex justify-between px-10 py-3 ">
+            <div class="flex items-center w-10 gap-2">
+                <img class="" src="iamges/logo.png" alt="">
+                <h6 class="font-black text-lg  text-[#006747]">Emergency <br> Service</h6>
+            </div>
+            <div class="flex items-center gap-3 ">
+                <div class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#41ff6b1a]">
+                    <p class="font-black ">0</p>
+                    <img  src="iamges/heart.png" alt="">
+                </div>
+                <div class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#41ff6b1a]">
+                    <p class="font-black">0</p>
+                    <img src="iamges/coin.png" alt="">
+                </div>
+                <div class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#00A63E]">
+                    <p class="font-bold text-white">0 <span>copy</span></p>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="w-full h-[165px] py-5 flex-col justify-items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <img class="w-15" src="iamges/logo-dark.png" alt="">
+            <p class="font-bold text-[30px] text-white ">Emergency Service Directory</p>
+            <p class="font-semibold text-[15px] text-white ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+
+    </header>
+    
+    <main  class="bg-[#41ff6b1a] h-auto p-8 flex  ">
+
+        <!-- card section  -->
+        <div class=" w-full h-auto grid grid-cols-3 grid-rows-3 gap-y-3">
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+            <div class="space-y-3 w-[300px] h-[250px] p-4 bg-white rounded-xl">
+                <div class="flex justify-between items-center w-[260px]">
+                    <img class="bg-[#FFE3E2] w-[40px]  h-[40px]  p-2  rounded-xl" src="iamges/emergency.png" alt="">
+                    <button class="btn btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-xl">999</p>
+                    <p class="inline-block px-4 py-1 bg-[#F2F2F2] rounded-2xl text-[#5C5C5C] text-sm">All</p>
+                </div>
+                <div>
+                    <button class="btn btn-dash btn-success w-[125px] h-[30px] text-[#5C5C5C] border-1 border-gray-200 rounded-md text-sm"><i class="fa-regular fa-clone rotate-90"></i>copy</button>
+                    <button class="btn w-[125px] h-[30px] text-white bg-[#00A63E] rounded-md text-sm"><i class="fa-solid fa-phone"></i>call</button>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <!-- history section  -->
+        <div class="w-[340px] h-auto bg-white rounded-xl p-3">
+            <div class=" flex justify-between items-center  ">
+                <p><i class="fa-regular fa-clock "></i>  Call History</p>
+                <button class="btn w-[80px] h-[45px] text-white bg-[#00A63E] rounded-4xl text-sm">Clear</button>
+                 <!-- <button class="btn btn-active ">Error</button> -->
+
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>
