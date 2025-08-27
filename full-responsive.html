@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fifth Assignment</title>
+    <title>Fifth Assignment With Responsive</title>
 
     <!-- tailwindCSS and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -20,12 +20,14 @@
 <body>
 
     <header>
-        <nav class=" flex justify-between px-8 py-3 max-sm:flex-col max-sm:justify-center items-center gap-y-3 ">
+        <nav
+            class=" flex justify-between px-8 py-3 max-sm:flex-col-reverse max-sm:justify-center items-center gap-y-3  ">
             <div class="flex items-center gap-x-2 max-sm:flex-col">
                 <img class="w-10" src="iamges/logo.png" alt="">
                 <h6 class="font-black text-lg  text-[#006747]">Emergency <br class="hidden lg:block"> Service</h6>
             </div>
-            <div class="flex items-center gap-3 ">
+
+            <div class="flex items-center gap-3 max-sm:hidden ">
                 <li class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#41ff6b1a]">
                     <p class="font-black ">0</p>
                     <img src="iamges/heart.png" alt="">
@@ -38,18 +40,52 @@
                     <p class="font-bold text-white">0 <span>copy</span></p>
                 </li>
             </div>
+
+            <!-- Hidden Checkbox Toggle -->
+            <div class="lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden" />
+                <label for="menu-toggle"
+                    class="btn btn-circle swap swap-rotate fixed top-4 left-4 z-50 sm:block md:hidden">
+                    <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 512 512">
+                        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                    </svg>
+                </label>
+                <aside
+                    class="fixed top-0 left-0 h-full w-64 bg-white p-2 z-40 translate-x-[-100%] space-y-4 peer-checked:translate-x-0 transition-transform duration-300 sm:block md:hidden">
+                    <div class="flex items-center gap-2 mt-14 ">
+                        <li class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#41ff6b1a]">
+                            <p class="font-black ">0</p>
+                            <img src="iamges/heart.png" alt="">
+                        </li>
+                        <li class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#41ff6b1a]">
+                            <p class="font-black">100</p>
+                            <img src="iamges/coin.png" alt="">
+                        </li>
+                        <li class="flex justify-center h-8 w-20 gap-2 p-1 rounded-3xl bg-[#00A63E]">
+                            <p class="font-bold text-white">0 <span>copy</span></p>
+                        </li>
+                    </div>
+                    <div class="w-full h-auto bg-[#41ff6b1a] rounded-xl p-2">
+                        <div class=" flex justify-between items-center  ">
+                            <p class="font-medium text-[18px]"><i class="fa-regular fa-clock "></i> Call History</p>
+                            <button
+                                class="btn w-[80px] h-[30px] text-white bg-[#00A63E] rounded-4xl text-sm">Clear</button>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
         </nav>
-        <div
-            class="w-full h-full py-5 px-3 flex-col justify-items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]  ">
+        <div class="w-full h-full py-5 px-3 flex-col justify-items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]  ">
             <img class="w-15" src="iamges/logo-dark.png" alt="">
             <p class="font-bold text-[30px] text-white ">Emergency Service Directory</p>
             <p class="font-semibold text-[15px] text-white ">Government Emergency Services at Your Fingertip – A Project
                 by Government of the People’s Republic of Bangladesh</p>
         </div>
-
     </header>
 
-    <main class="bg-[#41ff6b1a] h-auto p-8 flex max-sm:flex-col-reverse gap-y-5 ">
+    <main class="bg-[#41ff6b1a] h-auto p-8 flex max-sm:flex-col-reverse ">
 
         <!-- card section  -->
         <div class=" w-full h-auto grid grid-cols-3 grid-rows-3 gap-y-3 max-sm:grid-cols-1">
@@ -317,10 +353,12 @@
         </div>
 
         <!-- history section  -->
-        <div class="w-[340px] max-sm:w-full h-auto bg-white rounded-xl p-3 ">
+        <div class=" w-[340px] max-sm:hidden h-auto bg-white rounded-xl p-3">
             <div class=" flex justify-between items-center  ">
-                <p class="font-medium text-[18px]"><i class="fa-regular fa-clock "></i> Call History</p>
+                <p><i class="fa-regular fa-clock "></i> Call History</p>
                 <button class="btn w-[80px] h-[45px] text-white bg-[#00A63E] rounded-4xl text-sm">Clear</button>
+
+
             </div>
         </div>
 
