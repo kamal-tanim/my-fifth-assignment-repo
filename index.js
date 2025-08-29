@@ -6,7 +6,7 @@ for (let copyBtn of copyBtns) {
     const callNumber = copyBtn.parentNode.parentNode.children[2].children[0].innerText
     navigator.clipboard.writeText(callNumber)
       .then(function () {
-        alert('Your number copied to clipboard : ' + callNumber);
+        alert('✅ Your number has been copied to the clipboard: ' + callNumber);
       })
     const counts = parseInt(document.getElementById('copy-counts').innerText)
     const count = counts + 1
@@ -36,14 +36,14 @@ for (let callBtn of callBtns) {
   callBtn.addEventListener('click', function () {
     const coins = parseInt(document.getElementById('coins').innerText)
     if (coins < 20) {
-      alert('Do not have enough coin ');
+      alert('⚠️ You do not have sufficient balance. Please recharge to continue');
       return;
     }
     document.getElementById('coins').innerText = coins - 20
     const number = callBtn.parentNode.parentNode.children[2].children[0].innerText;
     const helplineName = callBtn.parentNode.parentNode.children[1].children[0].innerText
     document.getElementById('coins').innerText = coins - 20
-    alert('Calling ' + helplineName + ' : ' + number);
+    alert( '📞... Calling ' + helplineName + ' : ' + number);
     const localTime = new Date().toLocaleTimeString();
 console.log(localTime);
 
@@ -66,7 +66,3 @@ document.getElementById('clear-btn').addEventListener('click',function(){
   const history = document.getElementById('call-history');
   history.innerHTML = "";
 })
-
-
-
-
